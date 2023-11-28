@@ -23,7 +23,6 @@
     color: #fff;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
-    min-width: 55px;
     font-weight: 900;
   }
   
@@ -36,7 +35,6 @@
     color: #fff;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
-    min-width: 65px;
     font-weight: 900;
   }
   

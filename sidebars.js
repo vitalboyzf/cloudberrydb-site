@@ -34,7 +34,7 @@ const sidebars = {
       {
         type: 'category',
         label: 'Deploy on Physical Machine',
-        items: ['cbdb-op-software-hardware', 'cbdb-op-prepare-to-deploy', 'cbdb-op-deploy-guide']
+        items: ['cbdb-op-software-hardware', 'cbdb-op-prepare-to-deploy', 'cbdb-op-deploy-guide','deploy-cbdb-with-single-node']
       }
      ]
     },
@@ -43,18 +43,24 @@ const sidebars = {
       type: 'category',
       label: 'Create and Prepare',
       items: ['create-and-manage-database','start-and-stop-cbdb-database','connect-to-cbdb']
-     },
+    },
 
-     {
+    {
       type: 'category',
       label: 'Operate with Data',
       items: ['basic-query-syntax','create-and-manage-tables','insert-update-delete-rows','work-with-transactions','transactional-concurrency-control']
      },
 
      {
-      type: 'category',
-      label: 'Optimize Query Performance',
-      items: ['query-performance-overview', 'update-stats-using-analyze']
+       type: 'category',
+       label: 'Optimize Query Performance',
+       items: ['query-performance-overview', 'update-stats-using-analyze','use-unique-index-on-ao-tables','use-auto-materialized-view-to-answer-queries', 'use-incremental-materialized-view', 'parallel-create-ao-refresh-mv']
+     },
+
+     {
+       type: 'category',
+       label: 'Security and Permission',
+       items: ['set-password-profile']
      },
 
     {
@@ -95,11 +101,24 @@ const sidebars = {
           'sql-stmts/sql-stmt-truncate',
         ]
       },
+
+      {
+        type: 'category',
+        label: 'System Utilities',
+        items: ['sys-utilities/gpdemo']
+       },
      ]
     },
+
+    {
+      type: 'category',
+      label: 'Releases',
+      items: ['releases/release-1.5.0']
+     }
 
   ]
 }
 
 module.exports = sidebars;
+
 
