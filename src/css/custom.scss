@@ -102,6 +102,7 @@
   --code-border-color: rgb(153, 109, 26);
   --portrait-border-color: rgb(37, 38, 39);
   --portrait-border-hover-color: rgb(254, 177, 25);
+  --box-border-color: var(--sub-text-color);
   --sub-text-color-2: rgba(255, 255, 255, 0.6);
   --nav-link-line-normal-color: rgba(48, 54, 61, 1);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
@@ -118,4 +119,6 @@
 
   --home-btn-bg: #000;
   --home-btn-color: rgb(0, 0, 0);
+
+  --box-border-color: #e0e0e0;
 }
