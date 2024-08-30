@@ -1,0 +1,40 @@
+.wrap {
+  position: relative;
+  height: 882px;
+  background: url("/img/home/grid-right-bottom.png") no-repeat right bottom;
+  .circle {
+    margin: auto;
+    margin-top: 100px;
+    top: 259px;
+    width: 318px;
+    img {
+      width: 318px;
+      height: 318px;
+    }
+  }
+  .textContent {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    .info {
+      width: 298px;
+      &.open {
+        color: #8b7bcf;
+      }
+      &.friendly {
+        color: #ffa802;
+      }
+      &.advanced {
+        color: #9de8ee;
+      }
+      .title {
+        font-size: 50px;
+        font-weight: bold;
+      }
+      .content {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+}

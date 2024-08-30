@@ -1,9 +1,9 @@
 import dayjs from "dayjs";
-import recentPosts from "../../.docusaurus/docusaurus-plugin-content-blog/default/blog-archive-80c.json";
+// import recentPosts from "../../.docusaurus/docusaurus-plugin-content-blog/default/blog-archive-80c.json";
 
 export default function useGetNewBlogList(n: number = 4) {
-  let blogPosts = recentPosts.blogPosts;
-
+  // let blogPosts = recentPosts.blogPosts;
+  let blogPosts = [];
   // if (isZhLangrage()) {
   //  require("../../.docusaurus/docusaurus-plugin-content-blog/default/zh-blog-archive-8d7.json");
   // }

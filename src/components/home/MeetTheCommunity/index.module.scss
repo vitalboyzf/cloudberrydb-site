@@ -1,0 +1,50 @@
+.meetTheCommunity {
+  position: relative;
+  .bgImg {
+    width: 741px;
+    height: 741px;
+    margin: auto;
+    background-image: url("/img/home/grid-rect.png");
+  }
+  .title {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
+    p {
+      color: #fff;
+    }
+  }
+  .item {
+    position: absolute;
+    &.commits {
+      left: 347px;
+      top: 393px;
+    }
+    &.contributors {
+      right: 347px;
+      top: 393px;
+    }
+    .num {
+      font-size: 100px;
+      font-weight: bold;
+      font-style: italic;
+      background-image: linear-gradient(
+        to left,
+        #9ee8ee 0%,
+        #f78013 55%,
+        #9f8ced 97%
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .desc {
+      font-size: 20px;
+      margin-top: -20px;
+    }
+  }
+}

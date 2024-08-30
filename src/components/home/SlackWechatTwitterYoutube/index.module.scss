@@ -1,0 +1,16 @@
+.title {
+  font-size: 28px;
+  width: 895px;
+  text-align: center;
+  margin: 120px auto 136px;
+}
+.content {
+  display: flex;
+  width: 1070px;
+  margin: auto;
+  justify-content: space-between;
+  .item {
+    width: 188px;
+    text-align: center;
+  }
+}
