@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .loop-run {
+        width: 500px;
+        height: 300px;
+        /* background: #005e82; */
+        position: relative;
+        border-radius: 50%;
+      }
+
+      .circle {
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      .circle1 {
+        animation: animX 6s cubic-bezier(0.36, 0, 0.64, 1) -3s infinite alternate,
+          animY 6s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate,
+          scale 12s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
+      }
+
+      .circle3 {
+        animation: animX 6s cubic-bezier(0.36, 0, 0.64, 1) -7.8s infinite alternate,
+          animY 6s cubic-bezier(0.36, 0, 0.64, 1) -4.8s infinite alternate,
+          scale 12s cubic-bezier(0.36, 0, 0.64, 1) -4.8s infinite alternate;
+      }
+
+      .circle5 {
+        animation: animX 6s cubic-bezier(0.36, 0, 0.64, 1) -12.6s infinite alternate,
+          animY 6s cubic-bezier(0.36, 0, 0.64, 1) -9.6s infinite alternate,
+          scale 12s cubic-bezier(0.36, 0, 0.64, 1) -9.6s infinite alternate;
+      }
+
+      @keyframes animX {
+        0% {
+          left: -4%;
+        }
+
+        100% {
+          left: 96%;
+        }
+      }
+
+      @keyframes animY {
+        0% {
+          top: -4%;
+        }
+
+        100% {
+          top: 96%;
+        }
+      }
+      @keyframes scale {
+        0% {
+          transform: scale(0.5);
+          opacity: 0.8;
+        }
+
+        50% {
+          transform: scale(1);
+          opacity: 1;
+        }
+
+        100% {
+          transform: scale(0.5);
+          opacity: 0.8;
+        }
+      }
+      .circle {
+        text-align: center;
+        color: #fff;
+      }
+      .circle1 {
+        width: 94px;
+        height: 94px;
+        background: linear-gradient(180deg, #ffca80 0%, #f18433 100%);
+        line-height: 94px;
+      }
+      .circle3 {
+        width: 88px;
+        height: 88px;
+        background: linear-gradient(180deg, #dbfdff 0%, #52d1d9 100%);
+        line-height: 88px;
+      }
+      .circle5 {
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(180deg, #dfd8ff 0%, #8c7cd0 100%);
+        line-height: 80px;
+      }
+      .big-circle {
+        width: 185px;
+        height: 185px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        animation: jump 10s ease infinite alternate;
+      }
+      @keyframes jump {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+        40% {
+          transform: translate(-50%, -60%) scale(1);
+        }
+        80% {
+          transform: translate(-50%, -40%) scale(1);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loop-run">
+      <img
+        class="big-circle"
+        src="../../../static/img/home/big-circle.svg"
+        alt=""
+      />
+      <div class="circle circle1">Friendly</div>
+      <div class="circle circle3">Advanced</div>
+      <div class="circle circle5">Open</div>
+    </div>
+  </body>
+</html>

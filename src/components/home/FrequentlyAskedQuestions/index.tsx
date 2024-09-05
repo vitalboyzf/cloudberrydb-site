@@ -59,7 +59,8 @@ export default function frequentlyAskedQuestions() {
           <div className={styles.item} key={index}>
             <div className={styles.title}>{item.title}</div>
             <div className={styles.content}>{item.content}</div>
-            <hr />
+            {/* <hr /> */}
+            <div className={styles.bottomLine}></div>
           </div>
         ))}
       </div>

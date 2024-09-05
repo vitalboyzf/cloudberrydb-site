@@ -148,4 +148,9 @@
   --popper-bg-color: #000;
   --popper-text-color: #ffffff;
   --ifm-color-primary: #000;
+  .navbar-home-lighting {
+    --ifm-navbar-background-color: rgba(15, 15, 15, 0.4) !important;
+    --ifm-navbar-link-color: #fff;
+    --home-btn-bg: rgba(255, 168, 0, 1) !important;
+  }
 }

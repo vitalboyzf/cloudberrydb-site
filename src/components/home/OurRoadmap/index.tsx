@@ -71,6 +71,9 @@ export default function OurRoadmap() {
     <div className={styles.container}>
       <div className="global-width-center">
         <div className={styles.wrap}>
+          <div className={styles.bg}>
+            <img src="/img/home/grid-left-bottom.svg" alt="" />
+          </div>
           <div className={styles.title}>
             <Translate>Our Roadmap</Translate>
             <p className={styles.subTitle}>
