@@ -1,3 +1,6 @@
+import styles from "./index.module.scss";
+import DockerSvg from "/img/home/try-it-out/docker.svg";
+import SystemSvg from "/img/home/try-it-out/system.svg";
 const config = [
   {
     title: "Build from source code.",
@@ -10,6 +13,7 @@ const config = [
         <div> 2. Build on your machine.</div>
       </>
     ),
+    img: <DockerSvg />,
   },
   {
     title: "Create your sandbox.",
@@ -26,9 +30,9 @@ const config = [
         ) to set up.
       </>
     ),
+    img: <SystemSvg />,
   },
 ];
-import styles from "./index.module.scss";
 
 export default function tryItOut() {
   return (
@@ -39,6 +43,7 @@ export default function tryItOut() {
           <div className={styles.rectItem} key={index}>
             <div className={styles.itemTitle}>{item.title}</div>
             <div className={styles.itemContent}>{item.content}</div>
+            <div className={styles.itemImg}>{item.img}</div>
           </div>
         ))}
       </div>

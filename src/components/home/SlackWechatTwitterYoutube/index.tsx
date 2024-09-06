@@ -1,34 +1,34 @@
 const config = [
   {
     title: "Slack",
-    icon: "/img/home/slackWechat/slack.svg",
+    icon: "/img/home/links/slack.svg",
     desc: "Global channels for community members.",
   },
   {
-    title: "Wechat",
-    icon: "/img/home/slackWechat/wechat.svg",
-    desc: "Real-time chat in Mandarin Chinese.",
+    title: "LinkedIn",
+    icon: "/img/home/links/linked.svg",
+    desc: "Follow us on LinkedIn",
   },
   {
     title: "Twitter",
-    icon: "/img/home/slackWechat/twitter.svg",
+    icon: "/img/home/links/twitter.svg",
     desc: 'Follow @cloudberrydb on Twitter("X" now).',
   },
   {
     title: "Youtube",
-    icon: "/img/home/slackWechat/youtube.svg",
+    icon: "/img/home/links/youtube.svg",
     desc: "Watch the latest videos.",
+  },
+  {
+    title: "Wechat",
+    icon: "/img/home/links/wechat.svg",
+    desc: "Real-time chat in Mandarin Chinese.",
   },
 ];
 import styles from "./index.module.scss";
 export default function SlackWechatTwitterYoutube() {
   return (
     <>
-      <div className={styles.title}>
-        Cloudberry Database has a growing open source community, with
-        contributors from around the globe building features, documentation, and
-        assisting other users. 
-      </div>
       <div className={styles.content}>
         {config.map((item, index) => (
           <div className={styles.item} key={index}>
