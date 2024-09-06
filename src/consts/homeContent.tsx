@@ -17,7 +17,7 @@ let FEATURE_HIGHLIGHT: {
     title: "Open Source Alternative to Greenplum",
     content:
       "Cloudberry Database is compatible with Greenplum Database, but with a newer PostgreSQL 14.4 kernel and more advanced features Greenplum doesn't support.",
-  },  
+  },
   {
     icon: "/img/home/feature/sac.png",
     lightIcon: "/img/home/feature/sac-light.png",
@@ -103,6 +103,7 @@ const LINKS = {
   twitter: "https://twitter.com/cloudberrydb",
   youtube: "https://youtube.com/@cloudberrydb",
   community: "https://communityinviter.com/apps/cloudberrydb/welcome",
+  linkedIn: "https://www.linkedin.com/company/cloudberrydb",
   wechat: "/community/wechat",
   discoverMore: "/docs",
 };

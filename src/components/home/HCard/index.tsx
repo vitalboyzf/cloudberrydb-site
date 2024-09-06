@@ -2,7 +2,7 @@ import Translate, { translate } from "@docusaurus/Translate";
 import { LINKS } from "@site/src/consts/homeContent";
 import { useIsMobile } from "@site/src/hooks/useIsMobile";
 import clsx from "clsx";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Typed from "typed.js";
 import LinkWithBaseUrl from "../../common/LinkWithBaseUrl";
 import styles from "./styles.module.scss";
@@ -10,6 +10,7 @@ import styles from "./styles.module.scss";
 export default function HCard() {
   const el = useRef(null);
   const m = translate({ message: "Analytics  AI  Analytics and AI" });
+  const [isShowTips, setShowTips] = useState(true);
   // ["Analytics", "AI", "Analytics and AI"]
   useEffect(() => {
     const typed = new Typed(el.current, {
@@ -41,21 +42,25 @@ export default function HCard() {
     </>
   );
 
-  return (
-    <div className={clsx(styles.bannerContainer)}>
-      <div className={styles.tipsWrap}>
-        <div className={styles.tipsContent}>
-          <div className={styles.text}>
-            <span>
-              If you like Cloudberry Database, give it a star on GitHub!{" "}
-            </span>
-            <img src="/img/home/hcard/star.svg" alt="" />
-          </div>
-          <div className={styles.close}>
-            <img src="/img/home/hcard/close.svg" alt="" />
-          </div>
+  const headerTips = isShowTips ? (
+    <div className={styles.tipsWrap}>
+      <div className={styles.tipsContent}>
+        <div className={styles.text}>
+          <span>
+            If you like Cloudberry Database, give it a star on GitHub!{" "}
+          </span>
+          <img src="/img/home/hcard/star.svg" alt="" />
+        </div>
+        <div className={styles.close} onClick={() => setShowTips(false)}>
+          <img src="/img/home/hcard/close.svg" alt="" />
         </div>
       </div>
+    </div>
+  ) : null;
+
+  return (
+    <div className={clsx(styles.bannerContainer)}>
+      {headerTips}
       <div className={styles.content}>
         <div className={styles.left}>
           <div className={styles.highText}>

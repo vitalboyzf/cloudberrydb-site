@@ -1,39 +1,3 @@
-/* html[data-theme="light"] {
-  .wrap {
-    .showList {
-      .listItem1 {
-        .icon {
-          background-image: url(/img/home/feature/muc-light.svg);
-        }
-      }
-      .listItem2 {
-        .icon {
-          background-image: url(/img/home/feature/hesc-light.svg);
-        }
-      }
-      .listItem3 {
-        .icon {
-          background-image: url(/img/home/feature/sac-light.svg);
-        }
-      }
-      .listItem4 {
-        .icon {
-          background-image: url(/img/home/feature/cuwmt-light.svg);
-        }
-      }
-      .listItem5 {
-        .icon {
-          background-image: url(/img/home/feature/p14i-light.svg);
-        }
-      }
-      .listItem6 {
-        .icon {
-          background-image: url(/img/home/feature/mef-light.svg);
-        }
-      }
-    }
-  }
-} */
 .wrap {
   padding-bottom: 74px;
   background-color: #000;
@@ -42,17 +6,14 @@
   padding-right: 180px;
   position: relative;
   padding-bottom: 200px;
+  position: relative;
   .bg {
-    /* background-image: url(/img/home/grid-left-bottom.svg); */
-    /* position: absolute; */
-    img {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      height: 723px;
-      width: 1053px;
-      /* z-index: -1; */
-    }
+    background-image: url(/img/home/grid-left-bottom.svg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 723px;
+    width: 925px;
   }
 
   .title {

@@ -7,7 +7,6 @@ export default function MeetTheCommunity() {
   const [contributors, setContributors] = useState<ContributorItem[]>([]);
   useEffect(() => {
     getGithubContributors().then((c) => {
-      console.log(c);
       setContributors(c.slice(0, 119));
     });
   }, []);

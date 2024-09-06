@@ -47,6 +47,9 @@ export default function tryItOut() {
           </div>
         ))}
       </div>
+      <div className={styles.circle}></div>
+      <div className={styles.lineL}></div>
+      <div className={styles.lineR}></div>
     </div>
   );
 }

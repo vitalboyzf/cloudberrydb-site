@@ -71,22 +71,22 @@ export default function OurRoadmap() {
     <div className={styles.container}>
       <div className="global-width-center">
         <div className={styles.wrap}>
-          <div className={styles.bg}>
-            <img src="/img/home/grid-left-bottom.svg" alt="" />
-          </div>
+          <div className={styles.bg}></div>
           <div className={styles.title}>
             <Translate>Our Roadmap</Translate>
-            <p className={styles.subTitle}>
-              Welcome to join us in shaping the future of Cloudberry Database,
-              [check the roadmap details](
+            <div className={styles.subTitle}>
+              <div>
+                Welcome to join us in shaping the future of Cloudberry Database,
+              </div>
               <a
                 className="active-color"
                 href="https://github.com/orgs/cloudberrydb/discussions/369"
+                target="_blank"
               >
-                https://github.com/orgs/cloudberrydb/discussions/369
+                check the roadmap details{" "}
+                <img src="/img/home/our-roadmap/dot-arrow.svg" alt="" />
               </a>
-              ).
-            </p>
+            </div>
           </div>
           <div className={styles.showList}>{itemListGrid}</div>
         </div>

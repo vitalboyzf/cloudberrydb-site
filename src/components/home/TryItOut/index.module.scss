@@ -1,7 +1,9 @@
 .tryItOut {
-  width: 1092px;
+  width: var(--global-main-width);
+  /* width: 1092px; */
   margin: 0 auto;
   color: #fff;
+  position: relative;
   .title {
     font-size: 40px;
     font-weight: bold;
@@ -13,6 +15,7 @@
     display: grid;
     grid-template-columns: 530px 530px;
     gap: 32px;
+    justify-content: center;
 
     .rectItem {
       padding: 20px;
@@ -31,5 +34,31 @@
         margin-top: 24px;
       }
     }
+  }
+  .lineL {
+    background-image: url(/img/home/try-it-out/line-l.svg);
+    background-repeat: no-repeat;
+    width: 316.56px;
+    height: 309px;
+    top: 260px;
+    position: absolute;
+    left: -43px;
+  }
+  .lineR {
+    background-image: url(/img/home/try-it-out/line-r.svg);
+    background-repeat: no-repeat;
+    width: 316.56px;
+    position: absolute;
+    height: 309px;
+    top: 29px;
+    right: 30px;
+  }
+  .circle {
+    width: 83px;
+    height: 83px;
+    background-image: url(/img/home/try-it-out/circle.svg);
+    position: absolute;
+    top: 20px;
+    left: 150px;
   }
 }
