@@ -1,3 +1,4 @@
+import { MEET_THE_COMMUNITY } from "@site/src/consts/homeContent";
 import { useEffect, useState } from "react";
 import getGithubContributors, {
   ContributorItem,
@@ -13,10 +14,7 @@ export default function MeetTheCommunity() {
   return (
     <div className={styles.meetTheCommunity}>
       <div className={styles.bgImg}></div>
-      <div className={styles.title}>
-        <p>Meet the</p>
-        <p>community</p>
-      </div>
+      <div className={styles.title}>{MEET_THE_COMMUNITY.title}</div>
       <div className={styles.contributorList}>
         {contributors.map((c) => (
           <div className={styles.contributorItem} key={c.id}>
@@ -26,14 +24,6 @@ export default function MeetTheCommunity() {
           </div>
         ))}
       </div>
-      {/* <div className={clsx(styles.item, styles.commits)}>
-        <div className={styles.num}>69625</div>
-        <div className={styles.desc}>COMMITS</div>
-      </div>
-      <div className={clsx(styles.item, styles.contributors)}>
-        <div className={styles.num}>216</div>
-        <div className={styles.desc}>CONTRIBUTORS</div>
-      </div> */}
     </div>
   );
 }

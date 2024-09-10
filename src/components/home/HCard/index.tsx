@@ -1,5 +1,6 @@
 import Translate, { translate } from "@docusaurus/Translate";
-import { LINKS } from "@site/src/consts/homeContent";
+import { LINKS, TIPS_CONTENT } from "@site/src/consts/homeContent";
+import useGetNewBlogList from "@site/src/hooks/useGetNewBlogList";
 import { useIsMobile } from "@site/src/hooks/useIsMobile";
 import clsx from "clsx";
 import { useEffect, useRef, useState } from "react";
@@ -11,7 +12,9 @@ export default function HCard() {
   const el = useRef(null);
   const m = translate({ message: "Analytics  AI  Analytics and AI" });
   const [isShowTips, setShowTips] = useState(true);
-  // ["Analytics", "AI", "Analytics and AI"]
+  const blogs = useGetNewBlogList();
+  const newBlog = blogs[0];
+
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: m.split("  "),
@@ -37,7 +40,7 @@ export default function HCard() {
         <Translate>Next Generation</Translate>
       </div>
       <div>
-        <Translate>Unified Database</Translate>
+        <Translate>Unified Database for</Translate>
       </div>
     </>
   );
@@ -45,12 +48,7 @@ export default function HCard() {
   const headerTips = isShowTips ? (
     <div className={styles.tipsWrap}>
       <div className={styles.tipsContent}>
-        <div className={styles.text}>
-          <span>
-            If you like Cloudberry Database, give it a star on GitHub!{" "}
-          </span>
-          <img src="/img/home/hcard/star.svg" alt="" />
-        </div>
+        <div className={styles.text}>{TIPS_CONTENT}</div>
         <div className={styles.close} onClick={() => setShowTips(false)}>
           <img src="/img/home/hcard/close.svg" alt="" />
         </div>
@@ -67,7 +65,7 @@ export default function HCard() {
             <div className={styles.textWrap}>
               {headerDesc}
               <div>
-                <span style={{ color: "#fff" }}>for </span>
+                {/* <span style={{ color: "#fff" }}>for </span> */}
                 <span className={styles.typewriterText}>
                   <span ref={el}></span>
                 </span>
@@ -105,7 +103,7 @@ export default function HCard() {
       <div className={styles.bottomTips}>
         <div className={styles.tipsContent}>
           <div className={styles.text}>
-            February 2024 - Cloudberry Database Community Newsletter
+            <LinkWithBaseUrl to={newBlog.href}>{newBlog.title}</LinkWithBaseUrl>
           </div>
         </div>
       </div>

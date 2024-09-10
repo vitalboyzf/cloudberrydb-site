@@ -29,8 +29,7 @@ function extractNextUrl(linkHeader) {
 const baseGithubUrl = "https://api.github.com/repos";
 const repoName = "cloudberrydb/cloudberrydb";
 
-// const business = "commits"; // 提交记录
-const business = "contributors"; // 贡献者
+const business = "contributors";
 const key = "GITHUB_CONTRIBUTORS";
 
 export interface ContributorItem {
@@ -53,7 +52,6 @@ export default async function getGithubContributors(): Promise<
   } catch (err) {
     localStorage.removeItem(key);
     console.error(err);
-    return [];
   }
 
   if (!isNeedReqNewApi(cacheObj)) {

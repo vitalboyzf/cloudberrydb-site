@@ -1,35 +1,4 @@
-const config = [
-  {
-    title: "Slack",
-    icon: "/img/home/links/slack.svg",
-    desc: "Global channels for community members.",
-    link: "https://communityinviter.com/apps/cloudberrydb/welcome",
-  },
-  {
-    title: "LinkedIn",
-    icon: "/img/home/links/linked.svg",
-    desc: "Follow us on LinkedIn",
-    link: "https://www.linkedin.com/company/cloudberrydb/",
-  },
-  {
-    title: "Twitter",
-    icon: "/img/home/links/twitter.svg",
-    desc: 'Follow @cloudberrydb on Twitter("X" now).',
-    link: "https://twitter.com/cloudberrydb",
-  },
-  {
-    title: "Youtube",
-    icon: "/img/home/links/youtube.svg",
-    desc: "Watch the latest videos.",
-    link: "https://www.youtube.com/@cloudberrydb",
-  },
-  {
-    title: "Wechat",
-    icon: "/img/home/links/wechat.svg",
-    desc: "Real-time chat in Mandarin Chinese.",
-    link: "/community/wechat",
-  },
-];
+import { SLACK_TWITTER_TWITTER_WECHAT } from "@site/src/consts/homeContent";
 import clsx from "clsx";
 import LinkWithBaseUrl from "../../common/LinkWithBaseUrl";
 import styles from "./index.module.scss";
@@ -38,7 +7,7 @@ export default function SlackWechatTwitterYoutube() {
     <>
       <div className={styles.content}>
         <div className={clsx(styles.listWrap, "link-wrap")}>
-          {config.map((item, index) => (
+          {SLACK_TWITTER_TWITTER_WECHAT.list.map((item, index) => (
             <LinkWithBaseUrl
               href={item.link}
               className={styles.item}
