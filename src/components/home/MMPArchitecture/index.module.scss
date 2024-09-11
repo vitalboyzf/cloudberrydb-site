@@ -39,3 +39,17 @@
     }
   }
 }
+
+@media screen and (max-width: 1400px) {
+  .wrap {
+    .list {
+      word-break: break-all;
+      padding: 0 var(--mobile-padding-width);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      .item {
+        height: auto;
+      }
+    }
+  }
+}

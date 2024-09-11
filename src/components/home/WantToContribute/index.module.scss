@@ -14,9 +14,7 @@
       font-size: 35px;
     }
   }
+  @media (max-width: 1024px) {
+    padding: 128px var(--mobile-padding-width);
+  }
 }
-/**
-
-
-
-*/

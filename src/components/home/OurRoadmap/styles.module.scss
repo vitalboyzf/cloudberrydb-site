@@ -33,7 +33,6 @@
       margin-top: 30px;
       text-align: center;
       line-height: 35px;
-      word-break: break-all;
     }
   }
   .showList {
@@ -100,11 +99,18 @@
     }
   }
   @media screen and (max-width: 1440px) {
+    padding-left: 100px;
+    padding-right: 100px;
     .showList {
       &.top {
         .listItem {
           margin-bottom: 20px;
         }
+      }
+    }
+    .title {
+      .subTitle {
+        width: auto;
       }
     }
   }
@@ -131,6 +137,11 @@
         }
       }
     }
+    .bg {
+      width: 800px;
+      background-size: contain;
+      background-position: left bottom;
+    }
   }
   @media screen and (max-width: 768px) {
     padding-left: 74px;
@@ -149,6 +160,9 @@
           line-height: 1;
         }
       }
+    }
+    .bg {
+      width: 90%;
     }
   }
 }

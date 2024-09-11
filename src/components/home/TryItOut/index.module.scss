@@ -1,6 +1,4 @@
 .tryItOut {
-  width: var(--global-main-width);
-  /* width: 1092px; */
   margin: 0 auto;
   color: #fff;
   position: relative;
@@ -24,8 +22,8 @@
     .rectItem {
       padding: 20px;
       box-sizing: border-box;
-      width: 530px;
       border: 1px solid #a1aebf;
+      background-color: #000;
       .itemTitle {
         font-size: 28px;
         font-weight: 600;
@@ -64,5 +62,11 @@
     position: absolute;
     top: 127px;
     left: 334px;
+  }
+  @media screen and (max-width: 1440px) {
+    .rectList {
+      grid-template-columns: 1fr 1fr;
+      padding: 0 var(--mobile-padding-width);
+    }
   }
 }

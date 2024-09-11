@@ -108,6 +108,14 @@
       height: 37px;
       text-align: center;
       line-height: 37px;
+      font-size: 14px;
+      .text {
+        .blogTextIcon {
+          margin-right: 10px;
+          position: relative;
+          top: 5px;
+        }
+      }
     }
   }
 
@@ -312,63 +320,37 @@
     min-width: 100vw;
     height: auto;
     padding-bottom: 170px;
-    .tipsWrap {
-      margin-left: 0;
-      text-align: center;
-    }
-    .highText {
-      margin-left: 0;
-      text-align: center;
-      .textWrap {
-        height: auto;
-        .typewriterText {
-          width: 100%;
+
+    .content {
+      .left {
+        width: 100%;
+        .highText {
+          margin-left: 10%;
+        }
+        .btnWrap {
+          margin-left: 10%;
         }
       }
-      .textDesc {
-        margin-top: 0;
-      }
-    }
-    .btnWrap {
-      width: 100%;
-      text-align: center;
-      margin-left: 0;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
   .bannerContainer {
-    padding-bottom: 100px !important;
-  }
-  .tipsWrap {
-    margin-top: 150px !important;
-
-    .tips {
-      line-height: 30px;
-      height: 40px !important;
-      img {
-        width: 30px;
-      }
-      span {
-        font-size: 12px;
+    .content {
+      .left {
+        width: 100%;
+        .highText {
+          margin-left: 5%;
+        }
+        .btnWrap {
+          margin-left: 5%;
+        }
       }
     }
-  }
-  .textWrap {
-    font-size: 40px !important;
-    line-height: 40px !important;
-  }
-  .highText {
-    margin-top: 20px !important;
-  }
-  .typewriterText {
-    line-height: 60px !important;
-    span {
-      font-size: 40px;
+    .bline {
+      width: 100% !important;
+      right: 0 !important;
     }
-  }
-  .textDesc {
-    font-size: 30px !important;
   }
 }

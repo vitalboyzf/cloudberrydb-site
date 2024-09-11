@@ -85,24 +85,35 @@ export default function HCard() {
             </LinkWithBaseUrl>
           </div>
         </div>
-        <div className={styles.right}>
-          <div className={styles.loopRun}>
-            <img
-              className={styles.centerCircle}
-              src="/img/home/hcard/big-circle.svg"
-              alt=""
-            />
-            <div className={clsx(styles.circle, styles.circle1)}>Advanced</div>
-            <div className={clsx(styles.circle, styles.circle3)}>Friendly</div>
-            <div className={clsx(styles.circle, styles.circle5)}>Open</div>
+        {!useIsMobile() && (
+          <div className={styles.right}>
+            <div className={styles.loopRun}>
+              <img
+                className={styles.centerCircle}
+                src="/img/home/hcard/big-circle.svg"
+                alt=""
+              />
+              <div className={clsx(styles.circle, styles.circle1)}>
+                Advanced
+              </div>
+              <div className={clsx(styles.circle, styles.circle3)}>
+                Friendly
+              </div>
+              <div className={clsx(styles.circle, styles.circle5)}>Open</div>
+            </div>
           </div>
-        </div>
+        )}
         <div className={styles.bline}></div>
       </div>
 
       <div className={styles.bottomTips}>
         <div className={styles.tipsContent}>
           <div className={styles.text}>
+            <img
+              className={styles.blogTextIcon}
+              src="/img/home/hcard/new.svg"
+              alt=""
+            />
             <LinkWithBaseUrl to={newBlog.href}>{newBlog.title}</LinkWithBaseUrl>
           </div>
         </div>

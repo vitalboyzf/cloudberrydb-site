@@ -36,10 +36,29 @@
   }
   .bg {
     background-image: url("/img/home/grid-left-bottom.svg");
+    background-repeat: no-repeat;
     height: 100%;
     position: absolute;
     width: 925px;
     top: 0;
     left: 0;
+  }
+  @media screen and (max-width: 1440px) {
+  }
+  @media screen and (max-width: 1024px) {
+    .listWrap {
+      width: 100%;
+      padding: 0 var(--mobile-padding-width);
+    }
+    .bg {
+      width: 800px;
+      background-size: contain;
+      background-position: left bottom;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .bg {
+      width: 90%;
+    }
   }
 }
