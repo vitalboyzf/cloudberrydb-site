@@ -10,6 +10,30 @@ let TIPS_CONTENT = (
   </LinkWithBaseUrl>
 );
 
+let MMP_ARCHITECTURE = {
+  title: "MPP Architecture",
+  list: [
+    {
+      pic: "/img/home/os.png",
+      title: "Petabyte-Scale Data",
+      content:
+        "Cloudberry Database offers excellent performance for handling large-scale data workloads with high throughput.",
+    },
+    {
+      pic: "/img/home/pr.png",
+      title: "Mature Technology",
+      content:
+        "Cloudberry Database integrates solid PostgreSQL and Greenplum Database upstream technology, which both have wide adoption, active ecosystems, and tons of real-world use cases.",
+    },
+    {
+      pic: "/img/home/pc.png",
+      title: "Security Reinforcement",
+      content:
+        "Cloudberry Database supports more encryption methods and algorithms including AES 128, AES 192, AES 256, DES and SCRAM-SHA-256, MD5, LDAP, and RADIUS.",
+    },
+  ],
+};
+
 let OUR_ROADMAP = {
   title: "Our Roadmap",
   subTitle: (
@@ -260,6 +284,30 @@ if (isZhLangrage()) {
     </LinkWithBaseUrl>
   );
 
+  MMP_ARCHITECTURE = {
+    title: "MPP Architecture",
+    list: [
+      {
+        pic: "/img/home/os.png",
+        title: "Petabyte-Scale Data",
+        content:
+          "Cloudberry Database offers excellent performance for handling large-scale data workloads with high throughput.",
+      },
+      {
+        pic: "/img/home/pr.png",
+        title: "Mature Technology",
+        content:
+          "Cloudberry Database integrates solid PostgreSQL and Greenplum Database upstream technology, which both have wide adoption, active ecosystems, and tons of real-world use cases.",
+      },
+      {
+        pic: "/img/home/pc.png",
+        title: "Security Reinforcement",
+        content:
+          "Cloudberry Database supports more encryption methods and algorithms including AES 128, AES 192, AES 256, DES and SCRAM-SHA-256, MD5, LDAP, and RADIUS.",
+      },
+    ],
+  };
+
   OUR_ROADMAP = {
     title: "Our Roadmap",
     subTitle: (
@@ -331,8 +379,13 @@ if (isZhLangrage()) {
         content: (
           <>
             <div>
-              1. Clone the latest source code. git
-              clone https://github.com/cloudberrydb/cloudberrydb.git
+              1. Clone the latest source code. git clone 
+              <LinkWithBaseUrl
+                className="active-color"
+                href="https://github.com/cloudberrydb/cloudberrydb.git"
+              >
+                https://github.com/cloudberrydb/cloudberrydb.git
+              </LinkWithBaseUrl>
             </div>
             <div> 2. Build on your machine.</div>
           </>
@@ -407,15 +460,33 @@ if (isZhLangrage()) {
     list: [
       {
         title: "Want to Contribute?",
-        content: `There are many ways to contribute to Cloudberry Database, and you can
-            easily find the ones that suit your skills and interests to begin your
-            contribution journey.`,
+        content: (
+          <span>
+            There are many ways to contribute to Cloudberry Database, and you
+            can easily find the ones that suit your skills and interests to 
+            <LinkWithBaseUrl
+              className={"light-active-color"}
+              href="/contribute"
+            >
+              begin your contribution
+            </LinkWithBaseUrl>
+             journey.
+          </span>
+        ),
       },
       {
         icon: "/img/home/wtc.svg",
         title: "Get support",
-        content:
-          "We are always here to help and provide support whenever you need it.",
+        content: (
+          <span>
+            We are always here to
+            <LinkWithBaseUrl className="active-color" href="/support">
+              {" "}
+              help and provide support{" "}
+            </LinkWithBaseUrl>
+            whenever you need it.
+          </span>
+        ),
       },
     ],
   };
@@ -496,6 +567,7 @@ export {
   FREQUENTLY_ASKED_QUESTIONS,
   LINKS,
   MEET_THE_COMMUNITY,
+  MMP_ARCHITECTURE,
   OUR_ROADMAP,
   SLACK_TWITTER_TWITTER_WECHAT,
   TIPS_CONTENT,

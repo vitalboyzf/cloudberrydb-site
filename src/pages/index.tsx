@@ -2,6 +2,7 @@ import CommonLayout from "../components/common/Layout";
 import FrequentlyAskedQuestions from "../components/home/FrequentlyAskedQuestions";
 import HCard from "../components/home/HCard";
 import MeetTheCommunity from "../components/home/MeetTheCommunity";
+import MMPArchitecture from "../components/home/MMPArchitecture";
 import OurRoadmap from "../components/home/OurRoadmap";
 import SlackWechatTwitterYoutube from "../components/home/SlackWechatTwitterYoutube";
 import TryItOut from "../components/home/TryItOut";
@@ -13,6 +14,7 @@ export default function Home(): JSX.Element {
       <div className="navbar-home-lighting" style={{ background: "black" }}>
         <HCard />
         <div className={styles.homeContentContainer}>
+          <MMPArchitecture />
           <OurRoadmap />
           <TryItOut />
           <MeetTheCommunity />
