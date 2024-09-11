@@ -81,8 +81,13 @@ let TRY_IT_OUT = {
       content: (
         <>
           <div>
-            1. Clone the latest source code. git
-            clone https://github.com/cloudberrydb/cloudberrydb.git
+            1. Clone the latest source code. git clone 
+            <LinkWithBaseUrl
+              className="active-color"
+              href="https://github.com/cloudberrydb/cloudberrydb.git"
+            >
+              https://github.com/cloudberrydb/cloudberrydb.git
+            </LinkWithBaseUrl>
           </div>
           <div> 2. Build on your machine.</div>
         </>
@@ -117,6 +122,7 @@ let MEET_THE_COMMUNITY = {
     </>
   ),
 };
+
 let SLACK_TWITTER_TWITTER_WECHAT = {
   list: [
     {
@@ -151,19 +157,35 @@ let SLACK_TWITTER_TWITTER_WECHAT = {
     },
   ],
 };
+
 let WANT_TO_CONTRIBUTE = {
   list: [
     {
       title: "Want to Contribute?",
-      content: `There are many ways to contribute to Cloudberry Database, and you can
-          easily find the ones that suit your skills and interests to begin your
-          contribution journey.`,
+      content: (
+        <span>
+          There are many ways to contribute to Cloudberry Database, and you can
+          easily find the ones that suit your skills and interests to 
+          <LinkWithBaseUrl className={"light-active-color"} href="/contribute">
+            begin your contribution
+          </LinkWithBaseUrl>
+           journey.
+        </span>
+      ),
     },
     {
       icon: "/img/home/wtc.svg",
       title: "Get support",
-      content:
-        "We are always here to help and provide support whenever you need it.",
+      content: (
+        <span>
+          We are always here to
+          <LinkWithBaseUrl className="active-color" href="/support">
+            {" "}
+            help and provide support{" "}
+          </LinkWithBaseUrl>
+          whenever you need it.
+        </span>
+      ),
     },
   ],
 };

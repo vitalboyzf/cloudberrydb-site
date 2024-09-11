@@ -4,11 +4,13 @@
   margin: 0 auto;
   color: #fff;
   position: relative;
+  background-color: rgb(17, 15, 15);
+  overflow: hidden;
   .title {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 108px;
-    margin-top: 80px;
+    padding-top: 80px;
     text-align: center;
   }
   .rectList {
@@ -36,13 +38,13 @@
     }
   }
   .lineL {
-    background-image: url(/img/home/try-it-out/line-l.svg);
+    background-image: url(/img/home/try-it-out/line-r.svg);
     background-repeat: no-repeat;
     width: 316.56px;
     height: 309px;
     top: 260px;
     position: absolute;
-    left: -43px;
+    left: -143px;
   }
   .lineR {
     background-image: url(/img/home/try-it-out/line-r.svg);
@@ -50,15 +52,15 @@
     width: 316.56px;
     position: absolute;
     height: 309px;
-    top: 29px;
-    right: 30px;
+    top: 119px;
+    right: 0;
   }
   .circle {
     width: 83px;
     height: 83px;
     background-image: url(/img/home/try-it-out/circle.svg);
     position: absolute;
-    top: 20px;
-    left: 150px;
+    top: 127px;
+    left: 334px;
   }
 }
