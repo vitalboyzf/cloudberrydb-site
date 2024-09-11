@@ -18,6 +18,8 @@
     grid-template-columns: 530px 530px;
     gap: 32px;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 
     .rectItem {
       padding: 20px;
