@@ -11,7 +11,7 @@ import styles from "../css/pages/home.module.scss";
 export default function Home(): JSX.Element {
   return (
     <CommonLayout>
-      <div className="navbar-home-lighting" style={{ background: "black" }}>
+      <div className="navbar-home-lighting">
         <HCard />
         <div className={styles.homeContentContainer}>
           <MMPArchitecture />
