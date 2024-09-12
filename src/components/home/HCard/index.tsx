@@ -1,9 +1,9 @@
 import Translate, { translate } from "@docusaurus/Translate";
-import { LINKS, TIPS_CONTENT } from "@site/src/consts/homeContent";
+import { LINKS } from "@site/src/consts/homeContent";
 import useGetNewBlogList from "@site/src/hooks/useGetNewBlogList";
 import { useIsMobile } from "@site/src/hooks/useIsMobile";
 import clsx from "clsx";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import LinkWithBaseUrl from "../../common/LinkWithBaseUrl";
 import styles from "./styles.module.scss";
@@ -11,7 +11,6 @@ import styles from "./styles.module.scss";
 export default function HCard() {
   const el = useRef(null);
   const m = translate({ message: "Analytics  AI  Analytics and AI" });
-  const [isShowTips, setShowTips] = useState(true);
   const blogs = useGetNewBlogList();
   const newBlog = blogs[0];
 
@@ -45,20 +44,8 @@ export default function HCard() {
     </>
   );
 
-  const headerTips = isShowTips ? (
-    <div className={styles.tipsWrap}>
-      <div className={styles.tipsContent}>
-        <div className={styles.text}>{TIPS_CONTENT}</div>
-        <div className={styles.close} onClick={() => setShowTips(false)}>
-          <img src="/img/home/hcard/close.svg" alt="" />
-        </div>
-      </div>
-    </div>
-  ) : null;
-
   return (
     <div className={clsx(styles.bannerContainer)}>
-      {headerTips}
       <div className={styles.content}>
         <div className={styles.left}>
           <div className={styles.highText}>
