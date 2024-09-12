@@ -18,7 +18,11 @@ export default function MeetTheCommunity() {
       <div className={styles.contributorList}>
         {contributors.map((c) => (
           <div className={styles.contributorItem} key={c.id}>
-            <a href={c.htmlURL} target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/cloudberrydb/cloudberrydb/graphs/contributors"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={c.avatarURL} alt="" />
             </a>
           </div>
