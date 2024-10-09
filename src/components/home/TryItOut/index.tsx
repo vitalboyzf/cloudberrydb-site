@@ -8,8 +8,10 @@ export default function tryItOut() {
         {TRY_IT_OUT.list.map((item, index) => (
           <div className={styles.rectItem} key={index}>
             <div className={styles.itemTitle}>{item.title}</div>
-            <div className={styles.itemContent}>{item.content}</div>
-            <div className={styles.itemImg}>{item.img}</div>
+            <div className={styles.itemContentWrapper}>
+              <div className={styles.itemImg}>{item.img}</div>
+              <div className={styles.itemContent}>{item.content}</div>
+            </div>
           </div>
         ))}
       </div>

@@ -28,12 +28,17 @@
         font-size: 28px;
         font-weight: 600;
       }
-      .itemContent {
-        color: #728095;
-        word-break: break-all;
-      }
-      .itemImg {
-        margin-top: 24px;
+      .itemContentWrapper {
+        display: flex;
+        align-items: center;
+        .itemImg {
+          margin-top: 24px;
+          margin-right: 15px;
+        }
+        .itemContent {
+          color: #728095;
+          word-break: break-all;
+        }
       }
     }
   }
