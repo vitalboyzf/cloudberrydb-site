@@ -110,7 +110,17 @@ let TRY_IT_OUT = {
               git clone https://github.com/cloudberrydb/cloudberrydb.git
             </span>
           </div>
-          <div> 2. Build on your machine.</div>
+          <div>
+            {" "}
+            2. Build on your machine, check the{" "}
+            <LinkWithBaseUrl
+              className="active-color"
+              href="https://cloudberrydb.org/docs/cbdb-linux-compile"
+            >
+              doc
+            </LinkWithBaseUrl>
+            .
+          </div>
         </>
       ),
       img: <SystemSvg />,
@@ -172,7 +182,7 @@ let SLACK_TWITTER_TWITTER_WECHAT = {
       link: "https://www.youtube.com/@cloudberrydb",
     },
     {
-      title: "Wechat",
+      title: "WeChat",
       icon: "/img/home/links/wechat.svg",
       desc: "Real-time chat in Mandarin Chinese.",
       link: "/community/wechat",
@@ -227,8 +237,18 @@ let FREQUENTLY_ASKED_QUESTIONS = {
     },
     {
       title: "What's the product plan for the Cloudberry Database?",
-      content:
-        "You can check our Roadmap 2024 document to see all the details.",
+      content: (
+        <>
+          You can check our{" "}
+          <LinkWithBaseUrl
+            className="active-color"
+            href="https://github.com/orgs/cloudberrydb/discussions/369"
+          >
+            Roadmap 2024
+          </LinkWithBaseUrl>{" "}
+          document to see all the details.
+        </>
+      ),
     },
     {
       title:
@@ -253,7 +273,7 @@ let FREQUENTLY_ASKED_QUESTIONS = {
       title:
         "Can I use Cloudberry Database to replace our existing Greenplum Database clusters?",
       content:
-        "Sure. You can migrate from the Greenplum Database to the Cloudberry Database with no big changes.;",
+        "Yes. One goal of Cloudberry Database is to be compatible with Greenplum to let users can use Cloudberry the way using Greenplum. You can migrate from Greenplum to Cloudberry using gpbackup or other migration tools.",
     },
     {
       title: "How can I contribute to the Cloudberry Database?",
