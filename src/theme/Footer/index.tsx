@@ -68,7 +68,6 @@ export default function Footer() {
   Object.keys(LINKS).forEach((key) => {
     LINKS[key] = useBaseUrl(LINKS[key]);
   });
-
   return (
     <div className={clsx(styles.wrap)}>
       <div className={styles.mainWrap}>
@@ -121,7 +120,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className={styles.copyright}>{(footerConfig as any).copyright}</div>
+      <div className={styles.copyrightWrap}>
+        <div
+          className={styles.copyright}
+          dangerouslySetInnerHTML={{ __html: (footerConfig as any).copyright }}
+        ></div>
+      </div>
     </div>
   );
 }
