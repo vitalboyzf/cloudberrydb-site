@@ -4,7 +4,7 @@ title: Configure Client Authentication
 
 # Configure Client Authentication
 
-This topic explains how to configure client connections and authentication for Cloudberry Database.
+This topic explains how to configure client connections and authentication for Apache Cloudberry.
 
 When a Cloudberry Database system is first initialized, the system contains one predefined *superuser* role. This role will have the same name as the operating system user who initialized the Cloudberry Database system. This role is referred to as `gpadmin`. By default, the system is configured to only allow local connections to the database from the `gpadmin` role. If you want to allow any other roles to connect, or if you want to allow connections from remote hosts, you have to configure Cloudberry Database to allow such connections. This section explains how to configure client connections and authentication to Cloudberry Database.
 
