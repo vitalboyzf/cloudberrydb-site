@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import ColorCard from "../components/common/ColorCard";
+import ColorCard from "../components/common/ColorCardV2";
 import CommonLayout from "../components/common/Layout";
 import Table from "../components/common/Table";
 import configData from "../consts/support";

@@ -1,0 +1,39 @@
+html[data-theme="dark"] {
+  .container {
+    background: linear-gradient(to bottom, rgb(7, 7, 7), rgb(33, 37, 41));
+  }
+}
+.container {
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(231, 246, 255),
+    rgb(245, 251, 255)
+  );
+  height: 250px;
+  overflow: hidden;
+  .main {
+    width: var(--global-main-width);
+    margin: 0 auto;
+    position: relative;
+    padding: 0 var(--mobile-padding-width) 0;
+
+    .content {
+      max-width: 949px;
+      .bigText {
+        max-width: 847px;
+        font-weight: 700;
+        margin-top: 12px;
+        font-size: 30px;
+        line-height: 40px;
+        color: var(--title-text-color);
+      }
+      .smallText {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--sub-text-color-2);
+        margin-top: 8px;
+      }
+    }
+  }
+}

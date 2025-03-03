@@ -2,7 +2,7 @@ import {
   CONTRIBUTE_PAGE_CONFIG,
   LINK_NAV_CONFIG,
 } from "@site/src/consts/contribute";
-import ColorCard from "../../components/common/ColorCard";
+import ColorCard from "../../components/common/ColorCardV2";
 import CommonLayout from "../../components/common/Layout";
 import LinkNav from "../../components/common/LinkNav";
 import TextListItem from "../../components/contribute/TextListItem";

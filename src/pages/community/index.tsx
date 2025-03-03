@@ -1,6 +1,6 @@
 import { COMMUNITY_PAGE, LINK_NAV_CONFIG } from "@site/src/consts/community";
 import clsx from "clsx";
-import ColorCard from "../../components/common/ColorCard";
+import ColorCard from "../../components/common/ColorCardV2";
 import CommonLayout from "../../components/common/Layout";
 import LinkNav from "../../components/common/LinkNav";
 import Card from "../../components/community/Card";
